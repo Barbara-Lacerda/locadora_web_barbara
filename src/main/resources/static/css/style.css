@@ -10,17 +10,26 @@ body {
     background-color: #f7f8f6;
     color: #33491E;
 }
+.cabecalho{
+    background-color:white;
+    color:white;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
 
 .cabecalho h1 {
     margin: 8px;
     font-size: 38px;
     font-weight: bold;
     color: #33491E;
+    text-align: center;
 }
 
 .cabecalho p {
     color: #D28C9B;
     font-size: 18px;
+    text-align: center;
 }
 
 .aluna {
