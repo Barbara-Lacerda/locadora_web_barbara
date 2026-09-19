@@ -82,7 +82,10 @@ body {
     box-shadow: 0 6px 16px rgba(208, 28, 79, 0.25);
     transition: 0.25s ease;
 }
-
+.botao-menu:active {
+    transform: scale(0.95);
+    transition: 0.1s;
+}
 .rodape {
     margin-top: 50px;
     padding: 24px;
