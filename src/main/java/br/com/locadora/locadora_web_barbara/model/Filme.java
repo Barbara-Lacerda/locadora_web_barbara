@@ -44,23 +44,23 @@ public class Filme {
     public void setGenero(String genero){
         this.genero=genero;
     }
-    //
+
     public boolean isAlugado(){
         return alugado;
     }
     //altera o estado do filme, verificando se está alugado ou não
     public void alugar(){
         if(alugado){
-            throw new IllegalAccessException("Filme está alugado");
+            throw new IllegalArgumentException("Filme já está alugado.");
         }
         alugado=true;
     }
-    //devolução de filme
+    //devolução de filme ≥ marca filme como disponível
     public void devolver(){
         alugado=false;
     }
     //editar a saída que eu quero
-    @Override
+    @Override //indica que um método está sendo sobrescrito
     public String toString(){  //toString pega um objeto e transforma em "texto"
         String status = alugado ? "Alugado":"Disponível";
         return "Código: " +codigo
