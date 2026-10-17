@@ -10,7 +10,7 @@ import java.util.List;
 @Service  //indica que a classe é um serviço do Spring (que passa a gerenciar a mesma)
 public class LocadoraService{
     private final List<Filme>filmes; //declara a lista de filmes
-    private int proximoCodigoFilme; //guarda o próximo código auto.
+    private int proximoCodigoFilme; //guarda o próximo código automaticamente
 
     public LocadoraService(){
         filmes = new ArrayList<>(); //cria lista vazia,
